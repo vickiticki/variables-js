@@ -152,10 +152,9 @@ function main() {
     arraySum += numbers[i]
   }
 
+  // idk if you wanted another for loop just for average but here it is
+  var total = 0
   for (let i = 0; i < numbers.length; i++) {
-    if (i === 0) {
-      var total = numbers[0]
-    }
     total += numbers[i]
   }
   let average = total / numbers.length
