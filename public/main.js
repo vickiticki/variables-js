@@ -147,11 +147,8 @@ function main() {
       largest = numbers[i]
     }
   }
-
+  var arraySum = 0
   for (let i = 0; i < numbers.length; i++) {
-    if (i === 0) {
-      var arraySum = numbers[0]
-    }
     arraySum += numbers[i]
   }
 
@@ -172,6 +169,23 @@ function main() {
   // test
   // console.log(arraySum)
   // console.log(stats.sum)
+
+  var sumOfOdd = 0
+  for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] % 2 === 1) {
+      sumOfOdd += numbers[i]
+    }
+  }
+
+  var countOfEven = 0
+  for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] % 2 === 0) {
+      countOfEven++
+    }
+  }
+  // test
+  //   console.log(sumOfOdd)
+  //   console.log(countOfEven)
 }
 
 document.addEventListener('DOMContentLoaded', main)
